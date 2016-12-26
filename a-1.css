@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style>
+body{
+	margin:0;
+    padding:0;
+	font-family:"微软雅黑";
+	}
+.float{
+	   float:left
+	   }
+.floatr{
+	   float:right;
+	   }
+.clear{
+	  clear:both
+	  }
+ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	}
+img{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	}	
+	
+		  
+.header{ 
+	   width:1180px;
+       margin:20px auto;
+	   background:#FFFFFF;
+	   border-bottom:2px solid #DCDCDC;
+	   }
+.header div{
+	margin-right:20px;
+	}
+.header div:nth-child(1) img{
+	cursor:pointer;
+	}
+.header div:nth-child(2){
+	cursor:pointer;
+	}				
+.header ul{
+	margin-right:20px;
+	}
+.header ul li{
+	margin:5px 15px 0 15px;
+	font-size:14px;
+	cursor:pointer;
+	}
+.header ul li:hover{color:#FF571A;}				   
+.header div .sel{
+	width:75px;
+	height:30px;
+	border:1px solid #EDEDED;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	text-align:center;
+	line-height:30px;
+	font-size:16px;
+	color:#666666;
+	margin-right:0px;
+	
+	}
+.header div .sel+img{
+	border:1px solid #EDEDED;
+	padding:10px 0px;
+	border-left:0px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	}
+.bd{border:2px solid #E6E6E6;margin-top:-5px;}		
+.header div .button	{
+	width:19px;
+	height:19px;
+	background:url(image/head-sprite.png) no-repeat 2px -34px;
+	backround:#FFFFFF;
+	outline-color:transparent;
+	cursor:pointer;
+	margin:6px;
+	}
+.header div .button:hover{background:url(image/head-sprite.png) no-repeat 2px -54px;}	
+.header div .sear{
+	outline:none;
+	border:0px;
+	width:188px;
+	height:32px;
+	}
+.header div:nth-child(5) input{
+	cursor:pointer;
+	}
+.header div:nth-child(5) input:hover{color:#FF571A}			
+.header div:nth-child(6){
+	float:right;
+	}
+</style>

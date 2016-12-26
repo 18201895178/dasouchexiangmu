@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.foot{
+	background:#1F1F1F;
+	min-width:1180px;
+	margin-top:50px;
+	}
+.foot1{
+	
+	width:1180px;
+	height:400px;
+	margin:0 auto;
+	
+	}
+.da{
+	font-family:"微软雅黑";
+	margin-right:120px;
+}
+.dab{margin-right:0px;}
+.da1{
+	font-size:14px;
+	color:#FFFFFF;
+	margin:10px 20px 10px 0px;
+	
+	}
+.da2{
+	font-size:12px;
+	color:#717171;
+	margin:10px 20px 10px 0px;
+	}
+.da3{padding-left:18px;}
+a{text-decoration:none}
+.a2 a{
+	font-size:12px;
+	color:#717171;
+	padding:10px 3px;
+	}
+.a2 span{
+	font-size:12px;
+	color:#717171;
+	}
+.a2{padding:10px 0px;}
+.a2 a:hover{color:#FF571A;}
+.a3 a{
+	font-size:12px;
+	color:#717171;
+	padding:5px 12px;
+	}
+.a3{
+	padding:10px 0px;
+	border-top:1px solid #363636;
+	border-bottom:1px solid #363636;
+	margin:20px 0px;
+	}
+.a4{
+	font-size:12px;
+	color:#717171;
+	}

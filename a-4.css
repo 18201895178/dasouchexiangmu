@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pa{
+	height:200px;
+	width:1180px;
+	margin:0 auto;
+	}
+.t{
+	width:1180px;
+	text-align:center;
+	}
+.t1{
+	padding-top:80px;
+	font-size:34px;
+	font-family:"微软雅黑";
+	color:#333333;
+	}
+.t2{
+	padding-bottom:80px;
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#999999;
+	}

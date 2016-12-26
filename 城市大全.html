@@ -1,0 +1,756 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="杭州摆摆网络科技有限公司" />
+<meta name="discrption" content="杭州摆摆网络科技有限公司是一家互联网制作及设计的现代设计公司。摆摆网络将市场定位于以企业互联网电子商务平台及企业信息化建设为基点，提供全方位的设计与应用方案。以网站建设及网络营销整合作为其主打服务产品之外，摆摆网络的服务范围包括软件开发、平面设计、界面设计、网页设计等多方位优质服务。凭着对卓越服务与产品的不断追求，杭州摆摆网络科技有限公司在服务领域不断追求创新，依靠强大的技术实力、高效严谨的技术服务人员队伍，杭州摆摆网络科技有限公司在业界树立了良好的口碑。继往开来，杭州摆摆网络科技有限公司将以国际化的运营理念，多年业界的从业经验和技术积累，持之以恒，自强不息，为广大用户提供更加优异的产品和服务。" />
+
+<link rel="stylesheet" href="a-1.css"/>
+<link rel="stylesheet" href="a-7.css"/>
+<title>摆摆网-杭州摆摆网络科技股份有限公司</title>
+<style>
+.ca{color:#666666;}
+.ca:hover{color:#FF571A;}
+
+
+
+</style>
+</head>
+
+<body>
+<div class="header">
+  <div class="float">
+    <img src="image/logo.png" width="82" height="36">
+  </div>
+  <div class="float">
+    <div class="sel float">北京</div>
+    <img src="image/icon3.png" width="17" height="10">
+    <div class="clear"></div>
+  </div>
+  <ul class="float">
+    <li class="float">首页</li>
+    <li class="float">我要买车</li>
+    <li class="float">我要卖车</li>
+    <li class="float">商家服务</li>
+    <li class="float">关于我们</li>
+    <div class="clear"></div>
+  </ul>
+  <div class="float bd">
+    <input type="search" placeholder="搜索" class="float sear"/>
+    <div class="float button"></div>
+    <div class="clear"></div>
+  </div>
+  <div class="float">
+    <input type="button" value="登录" style="border:0;background:#FFFFFF;margin:0;padding-left:40px;"/>
+    <input type="button" value="注册" style="border:0;background:#FFFFFF;margin:0 10px 0 0;"/>
+  </div>
+  <div class="float">
+    <img src="image/phone-num.png" width="119" height="16">
+  </div>
+  <div class="clear"></div>
+</div>
+
+<script>
+var fragment=document.createDocumentFragment();
+var All=document.createElement("div");
+var h1=document.createElement("div");
+    h1.appendChild(document.createTextNode("大搜车全国开放城市大全"));
+    h1.style.fontFamily="微软雅体";
+    h1.style.fontSize="22px";
+    h1.style.fontWeight="bold";
+    h1.style.marginBottom="20px";
+
+
+var h2=document.createElement("div");
+    h2.appendChild(document.createTextNode("热门城市"));
+    h2.style.fontFamily="微软雅体";
+    h2.style.fontSize="18px";
+    h2.style.fontWeight="bold";
+
+var div0=document.createElement("div");
+    div0.style.margin="10px 0px";
+
+function createA(item){
+var a=document.createElement("a");
+	a.style.fontFamily="微软雅黑";
+	a.style.color="#666666";
+	a.style.fontSize="14px";
+	a.style.padding="0 10px";
+	a.style.cursor="pointer";
+	a.appendChild(document.createTextNode(item.name));
+	return a;
+	};
+
+
+var citys=[
+{
+	name:"北京",
+	
+},
+{
+	name:"宁波",
+},
+{
+	name:"深圳",
+},
+{
+	name:"厦门",
+},
+{
+	name:"成都",
+},
+
+];
+
+var Div=citys.map
+(
+function(item){
+return div0.appendChild(createA(item));
+	
+	}
+);
+
+
+for(var b=0;b<Div.length;b++){
+	Div[b].onmouseenter=function(){
+	this.style.color="#FF571A";};
+	Div[b].onmouseleave=function(){
+	this.style.color="#666666";
+	};
+	};
+	
+	
+All.style.width="1180px";
+All.style.margin="0 auto";
+All.appendChild(h1);
+All.appendChild(h2);
+All.appendChild(div0);	
+		
+</script>
+
+
+<script>
+
+var div1=document.createElement("div");
+
+
+function createDiv(item){
+	var  div=document.createElement("div");
+	div.style.fontFamily="微软雅黑";
+	div.style.color="#444444";
+	div.style.fontSize="16px";
+	div.style.padding="0 10px";
+	div.style.margin=" 8px 0 8px 0";
+	div.style.cursor="pointer";
+	div.style.fontWeight="bold";
+	div.appendChild(document.createTextNode(item.name));
+	return div;
+	};
+	
+
+function createB(item){
+	var  a=document.createElement("a");
+	a.style.fontFamily="微软雅黑";
+	a.style.fontSize="14px";
+	a.style.padding="0 10px";
+	a.style.cursor="pointer";
+	a.className="ca";
+    a.appendChild(document.createTextNode(item.name));
+	return a;
+	};	
+
+
+
+
+
+var province=[
+{
+	name:"北京",
+	city:[{name:"",}],
+},
+{
+	name:"新疆",
+	city:[
+	{
+	 name:"乌鲁木齐",	
+		},
+	
+	],
+},
+{
+	name:"辽宁",
+	city:[
+	{
+	 name:"沈阳",	
+		},
+	{
+	 name:"大连",	
+		},
+	{
+	 name:"抚顺",	
+		},
+	{
+	 name:"盘锦",	
+		},
+	{
+	 name:"鞍山",	
+		},
+	
+	],
+},
+{
+	name:"湖南",
+	city:[
+	{
+	name:"长沙"	
+	},
+	{
+	name:"湘潭"	
+	},
+	
+	],
+},
+{
+	name:"河北",
+	city:[
+	{
+	name:"石家庄"	
+		},
+		{
+	name:"唐山庄"	
+		},
+		{
+	name:"保定"	
+		},
+		{
+	name:"沧州庄"	
+		},
+		{
+	name:"秦皇岛"	
+		},
+		{
+	name:"廊坊"	
+		},
+		{
+	name:"邯郸"	
+		},
+	
+	],
+},
+{
+	name:"内蒙古",
+	city:[
+	{
+	name:"呼和浩特"	
+		},
+    {
+	name:"包头"	
+		},
+	],
+},
+{
+	name:"天津",
+	city:[{name:"",}],
+},
+{
+	name:"福建",
+	city:[
+	  {
+	name:"福州"	
+		},
+		{
+	name:"厦门"	
+		},
+		{
+	name:"泉州"	
+		},
+		{
+	name:"宁德"	
+		},
+		{
+	name:"龙岩"	
+		},
+	
+	],
+},
+{
+	name:"陕西",
+	city:[
+	{
+	name:"西安"	
+		},
+		{
+	name:"咸阳"	
+		},
+	
+	],
+},
+{
+	name:"浙江",
+	city:[
+	{
+	name:"杭州"	
+		},
+		{
+	name:"宁波"	
+		},
+		{
+	name:"台州"	
+		},
+		{
+	name:"温州"	
+		},
+		{
+	name:"绍兴"	
+		},
+		{
+	name:"金华"	
+		},
+	
+	],
+},
+{
+	name:"四川",
+	city:[
+	{
+	name:"成都"	
+		},
+		{
+	name:"绵阳"	
+		},
+	
+	],
+},
+{
+	name:"贵州",
+	city:[
+	{
+	name:"贵阳"	
+		},
+		{
+	name:"遵义"	
+		},
+	],
+},
+{
+	name:"云南",
+	city:[
+	{
+	name:"昆明"	
+		},
+	
+	],
+},
+{
+	name:"上海",
+	city:[{name:"",}],
+},
+{
+	name:"山西",
+	city:[
+	{
+	name:"太原"	
+		},
+		{
+	name:"晋城"	
+		},
+		{
+	name:"大同"	
+		},
+		{
+	name:"临汾"	
+		},
+	
+	],
+},
+{
+	name:"江西",
+	city:[
+	{
+	name:"南昌"	
+		},
+		{
+	name:"九江"	
+		},
+		{
+	name:"抚州"	
+		},
+		{
+	name:"赣州"	
+		},
+	],
+},
+{
+	name:"广西",
+	city:[
+	{
+	name:"南宁"	
+		},
+		{
+	name:"柳州"	
+		},
+		{
+	name:"桂林"	
+		},
+	],
+},
+{
+	name:"黑龙江",
+	city:[
+	{
+	name:"海尔滨"	
+		},
+		{
+	name:"大庆"	
+		},
+	
+	],
+},
+{
+	name:"宁夏",
+	city:[
+	{
+	name:"银川"	
+		},
+	],
+},
+{
+	name:"江苏",
+	city:[
+	{
+	name:"南京"	
+		},
+		{
+	name:"盐城"	
+		},
+		{
+	name:"徐州"	
+		},
+		{
+	name:"宿迁"	
+		},
+		{
+	name:"泰州"	
+		},
+		{
+	name:"连云港"	
+		},
+		{
+	name:"无锡"	
+		},
+		{
+	name:"常州"	
+		},
+		{
+	name:"苏州"	
+		},
+		{
+	name:"镇江"	
+		},
+		{
+	name:"淮安"	
+		},
+		{
+	name:"南通"	
+		},
+	
+	],
+},
+{
+	name:"安徽",
+	city:[
+	{
+	name:"合肥"	
+		},
+		{
+	name:"蚌埠"	
+		},
+		{
+	name:"淮南"	
+		},
+		{
+	name:"芜湖"	
+		},
+		{
+	name:"六安"	
+		},
+	],
+},
+{
+	name:"吉林",
+	city:[
+	{
+	name:"长春"	
+		},
+		{
+	name:"吉林"	
+		},
+	],
+},
+{
+	name:"湖北",
+	city:[
+	{
+	name:"武汉"	
+		},
+		{
+	name:"荆州"	
+		},
+		{
+	name:"随州"	
+		},
+		{
+	name:"宜昌"	
+		},
+		{
+	name:"黄冈"	
+		},
+	],
+},
+{
+	name:"重庆",
+	city:[{name:"",}],
+},
+{
+	name:"山东",
+	city:[
+	{
+	name:"济南"	
+		},
+		{
+	name:"威海"	
+		},
+		{
+	name:"烟台"	
+		},
+		{
+	name:"济宁"	
+		},
+		{
+	name:"枣庄"	
+		},
+		{
+	name:"临沂"	
+		},
+		{
+	name:"潍坊"	
+		},
+		{
+	name:"日照"	
+		},
+		{
+	name:"青岛"	
+		},
+		{
+	name:"淄博"	
+		},
+	],
+},
+{
+	name:"河南",
+	city:[
+	{
+	name:"郑州"	
+		},
+		{
+	name:"安阳"	
+		},
+		{
+	name:"新乡"	
+		},
+		{
+	name:"洛阳"	
+		},
+		{
+	name:"焦作"	
+		},
+		{
+	name:"开封"	
+		},
+		{
+	name:"商丘"	
+		},
+		{
+	name:"许昌"	
+		},
+	],
+},
+{
+	name:"广东",
+	city:[
+	{
+	name:"广州"	
+		},
+		{
+	name:"东莞"	
+		},
+		{
+	name:"深圳"	
+		},
+		{
+	name:"佛山"	
+		},
+	],
+},
+];
+
+
+
+
+var Bigdiv=province.map
+(
+function(item){
+var div2=document.createElement("div");	
+var div=createDiv(item);
+var da=item.city.map(function(item){return div2.appendChild(createB(item))});
+
+   All.appendChild(div);
+   All.appendChild(div2);
+
+return div;
+	
+	}
+);
+
+
+
+for(var b=0;b<Bigdiv.length;b++){
+	Bigdiv[b].onmouseenter=function(){
+	this.style.color="#FF5517";};
+	Bigdiv[b].onmouseleave=function(){
+	this.style.color="#444444";
+	
+	};
+
+	};
+</script>
+
+
+
+
+
+
+
+<script>
+fragment.appendChild(All);
+document.body.appendChild(fragment);
+</script>
+
+
+
+<div class="foot">
+  <div class="foot1">
+    <div class="">
+      <div class="float da">
+        <div class="da1">导购大全</div>
+        <div class="da2">城市大全</div>
+        <div class="da2">品牌大全</div>
+        <div class="da2">车系大全</div>
+      </div>
+      <div class="float da">
+        <div class="da1">购车指南</div>
+        <div class="da2">如何挑选二手车</div>
+        <div class="da2">如何判断事故火烧水浸车</div>
+        <div class="da2">二手车指标说明</div>
+      </div>
+      <div class="float da">
+       <div class="da1">关于我们</div>
+        <div class="da2">大搜车理念</div>
+        <div class="da2">牛车</div>
+        <div class="da2">大风车</div>
+        <div class="da2">大搜车手机版</div>
+      </div>
+      <div class="float da">
+        <div class="da1">联系我们</div>
+        <div class="da2">联系电话</div>
+        
+      </div>
+      <div class="float">
+        <div class="da1 da3"><img src="image/g1.png" width="66" height="66"></div>
+        <div class="da2">扫一扫，关注微信号</div>
+        
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="">
+      <div class="a2">
+        <span>热门城市</span>
+        <a href="#">厦门</a>
+        <a href="#">北京</a>
+        <a href="#">南宁</a>
+        <a href="#">杭州</a>
+        <a href="#">郑州</a>
+        <a href="#">潭州</a>
+        <a href="#">长沙</a>
+        <a href="#">合肥</a>
+        <a href="#">西安</a>
+        <a href="#">上海</a>
+        <a href="#">宁波</a>
+        <a href="#">温州</a>
+        <a href="#">太原</a>
+        <a href="#">青岛</a>
+        <a href="#">南京</a>
+        <a href="#">武汉</a>
+        <a href="#">沈阳</a>
+        <a href="#">成都</a>
+        <a href="#">石家庄</a>
+        <a href="#">重庆</a>
+        <a href="#">台州</a>
+        <a href="#">大连</a>
+        <a href="#">福州</a>
+        <a href="#">佛山</a>
+        <a href="#">临沂</a>
+        <a href="#">济南</a>
+        <a href="#">苏州</a>
+        <a href="#">贵阳</a>
+        <a href="#">泉州</a>
+      </div>
+      <div class="a2">
+        <a href="#">南昌</a>
+        <a href="#">天津</a>
+        <a href="#">东莞</a>
+        <a href="#">深圳</a>
+        <a href="#">昆明</a>
+        <a href="#">广州</a>
+        <a href="#">包头</a>
+        <a href="#">鞍山</a>
+        <a href="#">淮南</a>
+        <a href="#">长春</a>
+        <a href="#">金华</a>
+        <a href="#">乌鲁木齐</a>
+        <a href="#">无锡</a>
+        <a href="#">柳州</a>
+        <a href="#">潍坊</a>
+        <a href="#">荆州</a>
+        <a href="#">保定</a>
+        <a href="#">枣庄</a>
+        <a href="#">洛阳</a>
+        <a href="#">常州</a>
+        <a href="#">沧州</a>
+        <a href="#">更多城市</a>
+      </div>
+    </div>
+    <div class="a3">
+    <a href="#">车险信息网</a>
+    <a href="#">中山二手车</a>
+    <a href="#">车易拍</a>
+    <a href="#">汽车点评网</a>
+    <a href="#">杭州二手车</a>
+    <a href="#">2014汽车报价</a>
+    <a href="#">北京汽车网</a>
+    <a href="#">中国二手车网</a>
+    <a href="#">汽车配件</a>
+    <a href="#">二手车评估</a>
+    <a href="#">湖北专用车</a>
+    <a href="#">中国汽车网</a>
+    <a href="#">大浙汽车</a>
+    <a href="#">搜狐二手车</a>
+    <a href="#">车300估价</a>
+    <a href="#">58二手车</a>
+    <a href="#">二手车评估</a>
+    </div>
+    <div class="a4">Copyright <span>&copy;</span> 2016 SouChe All Rights Reserved 杭州大搜车汽车服务有限公司 版权所有 京 ICP备 13012136号 京公网安备 11010802013095号</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+.center{
+	width:1180px;
+	margin:0 auto;
+	padding-top:50px;
+	border-top:2px solid #DCDCDC;
+	}
+.cth{
+	font-size:20px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	}
+.x{
+	width:1180px;
+	height:200px;
+	margin-top:20px;
+	}
+.x1{
+	width:50px;
+	height:30px;
+	border:1px solid #666666;
+	text-align:center;
+	font-size:22px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	color:#666666;
+	margin-top:20px;
+	
+}
+.t1{margin:20px 20px}
+.aa1{
+	font-size:16px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	color:#666666;
+	margin:0 10px
+	}
+.aa2{
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#666666;
+	margin:0 10px
+	}

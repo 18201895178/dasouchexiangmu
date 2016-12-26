@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.centerNav{
+	width:1180px;
+	height:200px;
+	margin:0 auto;
+	background:#FFFFFF;
+	}
+.floatr{
+	float:right;
+	}
+.na1{
+	width:350px;
+	padding-top:40px;
+	}
+.a1{
+	cursor:pointer;
+	width:10px;
+	height:6px;
+	}
+.mark{
+	width:350px;
+	heifht:30px;
+	padding-top:10px;
+	cursor:pointer;
+	color:#666666
+	}
+.wid1{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.wid2{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.wid3{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.wid4{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.wid5{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.wid6{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.wid7{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.wid8{
+	width:42px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666
+	}
+.padr{
+	padding-right:55px;
+	}

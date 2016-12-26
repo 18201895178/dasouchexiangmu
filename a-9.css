@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ad{
+	width:80px;
+	height:220px;
+	position:fixed;
+	bottom:50px;
+	right:-30px;
+	background:#F7F7F7;
+	}	
+.ad1{
+	background:#FF571A;
+	font-family:"微软雅黑";
+	font-size:16px;
+	text-align:center;
+	color:#FFFFFF;
+	height:30px;
+	line-height:30px;
+	}
+.ad0{
+	font-family:"微软雅黑";
+	font-size:12px;
+	text-align:center;
+	color:#666666;
+	}
+	
+.ad2{
+	background:url(image/icon2.png) no-repeat;
+	height:20px;
+	width:20px;
+	margin:0 auto;
+	}
+.ad3{
+	background:url(image/icon2.png) no-repeat -20px 0px;
+	height:20px;
+	width:20px;
+	margin:0 auto;
+	}
+.ad4{
+	background:url(image/icon2.png) no-repeat -40px -40px;
+	height:20px;
+	width:20px;
+	margin:0 auto;
+	}
+.ad5{
+	background:url(image/icon2.png) no-repeat -80px 0px;
+	height:20px;
+	width:20px;
+	margin:0 auto;
+	}
+.adp2{
+	margin:5px 0px;
+	cursor:pointer;
+	}
+.adp3{
+	margin:5px 0px;
+	cursor:pointer;
+	}
+.adp4{
+	margin:5px 0px;
+	cursor:pointer;
+	}
+.adp5{
+	margin:5px 0px;
+	cursor:pointer;
+	}
+.adp2:hover .ad2{background:url(image/icon2.png) no-repeat 0px -20px;}
+.adp3:hover .ad3{background:url(image/icon2.png) no-repeat -20px -20px;}
+.adp4:hover .ad4{background:url(image/icon2.png) no-repeat -40px -60px;}
+.adp5:hover .ad5{background:url(image/icon2.png) no-repeat -80px -20px;}
+
+.ad:hover{right:0px;transition:right 0.5s;}
