@@ -7,12 +7,14 @@
 
 <link rel="stylesheet" href="a-1.css"/>
 <link rel="stylesheet" href="a-7.css"/>
-<link rel="stylesheet" href="a-8.css"/>
 <link rel="stylesheet" href="a-9.css"/>
 <title>摆摆网-杭州摆摆网络科技股份有限公司</title>
-
 </head>
+<style>
+.ca{color:#666666;}
+.ca:hover{color:#FF571A;}
 
+</style>
 <body>
 <div class="header">
   <div class="float">
@@ -24,8 +26,8 @@
     <div class="clear"></div>
   </div>
   <ul class="float">
-    <li class="float">首页</li>
-    <li class="float">我要买车</li>
+    <li class="float"><a href="index.html" class="hr1">首页</a></li>
+    <li class="float"><a href="buy.html" class="hr1">我要买车</a></li>
     <li class="float">我要卖车</li>
     <li class="float">商家服务</li>
     <li class="float">关于我们</li>
@@ -45,58 +47,510 @@
   </div>
   <div class="clear"></div>
 </div>
+<script>
+var fragment=document.createDocumentFragment();
+var All=document.createElement("div");
+var div1=document.createElement("div");
+var h1=document.createElement("div");
+    h1.appendChild(document.createTextNode("车辆品牌大全"));
+    h1.style.fontFamily="微软雅体";
+    h1.style.fontSize="22px";
+    h1.style.fontWeight="bold";
+    h1.style.marginBottom="20px";
+
+All.style.width="1180px";
+All.style.margin="0 auto";
+All.appendChild(h1);
+
+function createDiv(item){
+	var  div=document.createElement("div");
+	div.style.fontFamily="微软雅黑";
+	div.style.color="#444444";
+	div.style.fontSize="20px";
+	div.style.padding="0 10px";
+	div.style.cursor="pointer";
+	div.style.fontWeight="bold";
+	div.style.float="left";
+	div.style.border="1px solid #666666";
+	div.style.width="40px";
+	div.style.height="30px";
+	div.style.margin="10px 10px";
+	div.style.textAlign="center";
+	div.appendChild(document.createTextNode(item.FW));
+	return div;
+	};
+	
+
+function createB(item){
+	var  a=document.createElement("a");
+	a.style.fontFamily="微软雅黑";
+	a.style.fontSize="14px";
+	a.style.padding="0 10px";
+	a.style.cursor="pointer";
+	a.className="ca";
+    a.appendChild(document.createTextNode(item.name));
+	return a;
+	};	
 
 
-<div class="center">
-  <div class="cth">二手车指标问题说明</div>
-  
-  <div class="p2">
-  一、我没有指标，大搜车能帮忙解决吗？
-  </div>
-  <div class="p1">
-  很抱歉，北京指标是参加摇号获取的，
-  需要您自己落实。如果您买车没有指标，
-  可以将车外迁到其他城市上牌（早晚高峰不能进入六环，需要办理进京许可证）。
-  </div>
-  
-  <div class="p2">
-  二、使用他人的指标，已自己名义来办理贷款，是否可以？
-  </div>
-  <div class="p1">
-  可以，车辆贷款必须由指标持有人或持有人的直系亲属来办理，
-  直系亲属办理需提供户口本证明，不在一个户口本上，
-  需要派出所开具关系，贷款额度不超过15万。
-  </div>
-  <div class="p2">
-  三、没有指标，能否把车买回去，不上牌吗？
-  </div>
-  <div class="p1">
-  抱歉，不可以。在中国无牌照相当于黑户（不合法），且车辆不上牌不算交易完成。
-  </div>
-  <div class="p2">
- 四、置换时，如何能保留原车号牌？
-  </div>
-  <div class="p1">
-  保留车牌原号，需要买新车，且原车号牌使用时间在3年以上；如果您买二手车，只能有指标，原车号牌会变更。
-  </div>
-  
-</div>
+
+var firstWord=[
+{
+FW:"A",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+	{
+FW:"B",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+	{
+FW:"C",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"D",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"E",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"F",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"G",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"H",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"J",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"K",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"L",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"M",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"N",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"O",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"P",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"Q",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"R",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"S",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"T",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"W",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"X",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"Y",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+{
+FW:"Z",
+brand:[
+{
+	name:"A 阿尔法罗密欧",
+	},
+	{
+	name:"A 阿斯顿・马丁",
+	},
+	{
+	name:"A 奥迪",
+	},
+	{
+	name:"A 安凯客车",
+	},
+
+],	
+	},
+
+
+];
+var Bigdiv=firstWord.map
+(
+function(item){
+var div2=document.createElement("div");	
+var div=createDiv(item);
+var div3=document.createElement("div");
+var da=item.brand.map(function(item){return div2.appendChild(createB(item))});
+   div3.style.clear="both";
+   div2.style.float="left";
+   div2.style.margin="10px 10px";
+   All.appendChild(div);
+   All.appendChild(div2);
+   All.appendChild(div3);
+return div;
+	
+	}
+);
+
+
+fragment.appendChild(All);
+document.body.appendChild(fragment);
+</script>
 
 
 <div class="foot">
   <div class="foot1">
     <div class="">
       <div class="float da">
+        <div class="float da">
         <div class="da1">导购大全</div>
-        <div class="da2">城市大全</div>
-        <div class="da2">品牌大全</div>
-        <div class="da2">车系大全</div>
+        <div class="da2"><a href="city.html" class="hr2">城市大全</a></div>
+        <div class="da2"><a href="brand.html" class="hr2">品牌大全</a></div>
+        <div class="da2"><a href="car.html" class="hr2">车系大全</a></div>
       </div>
       <div class="float da">
         <div class="da1">购车指南</div>
-        <div class="da2">如何挑选二手车</div>
-        <div class="da2">如何判断事故火烧水浸车</div>
-        <div class="da2">二手车指标说明</div>
+        <div class="da2"><a href="market.html" class="hr2">如何挑选二手车</a></div>
+        <div class="da2"><a href="judge.html" class="hr2">如何判断事故火烧水浸车</a></div>
+        <div class="da2"><a href="norm.html" class="hr2">二手车指标说明</a></div>
       </div>
       <div class="float da">
        <div class="da1">关于我们</div>

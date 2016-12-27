@@ -50,6 +50,7 @@ img{
 	margin:5px 15px 0 15px;
 	font-size:14px;
 	cursor:pointer;
+	color:#333333
 	}
 .header ul li:hover{color:#FF571A;}				   
 .header div .sel{
@@ -96,4 +97,6 @@ img{
 .header div:nth-child(6){
 	float:right;
 	}
+.hr1{color:#333333}
+.hr1:hover{color:#FF571A;}	
 </style>
