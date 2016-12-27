@@ -1,8 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-#ad{width:1180px;position:relative;margin:0 auto;height:460px;}
+#ad{width:100%;position:relative;margin:0 auto;height:460px;}
+#adv{width:100%;}
 #ad #adv div{position:absolute;top:0px;left:0px;}
-#left{position:absolute;top:208px;left:10px;cursor:pointer;z-index:3}
-#right{position:absolute;top:208px;right:10px;cursor:pointer;z-index:3}
+#left{position:absolute;top:208px;left:50px;cursor:pointer;z-index:3}
+#right{position:absolute;top:208px;right:50px;cursor:pointer;z-index:3}
 .cover{z-index:2;}
